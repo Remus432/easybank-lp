@@ -1,0 +1,61 @@
+.header
+  padding: 6rem 0
+
+  &__nav
+    align-items: center
+    background: $white
+    display: flex
+    justify-content: space-between
+    position: fixed
+    padding: 3rem
+    top: 0
+    z-index: 2
+    width: 100%
+
+    &-menu
+      align-items: center
+      background: $white
+      border-radius: .6rem
+      flex-direction: column
+      position: absolute
+      padding: 2rem
+      top: 10rem
+      left: 50%
+      transform: translateX(-50%)
+      width: 90%
+
+      &-item
+        margin: 1rem 0
+        list-style: none
+
+        &-link
+          color: $dark-blue
+          text-decoration: none
+
+    &-hamburger
+      cursor: pointer
+
+    &-btn
+      display: none
+
+  &__content
+    align-items: center
+    display: flex
+    flex-direction: column
+    text-align: center
+
+    &-description
+      margin: 2rem auto
+      width: 80%
+
+    &-illustration
+      margin: auto
+      margin-bottom: 3rem
+      width: 400px
+
+.hidden
+  display: none
+
+.active
+  display: flex
+  
